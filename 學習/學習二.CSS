@@ -1,0 +1,80 @@
+/* 全域設定 */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    /* 背景圖設定：自動縮放並固定 */
+    background-image: url('背景.jpg');
+    background-size: cover;       /* 關鍵：自動縮放填滿螢幕 */
+    background-position: center;   /* 居中顯示 */
+    background-attachment: fixed;  /* 捲動時背景不動 */
+    background-repeat: no-repeat;
+    
+    font-family: '尹靈風-Elfking', "Microsoft JhengHei", sans-serif;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    padding: 40px 20px;
+}
+
+/* 玻璃質感內容容器 */
+.container {
+    background: rgba(0, 0, 0, 0.6); /* 半透明黑色背景 */
+    backdrop-filter: blur(10px);    /* 背景模糊效果 */
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 20px;
+    padding: 30px;
+    max-width: 800px;
+    width: 100%;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+}
+
+/* 標題與文字 */
+h1 { margin: 15px 0; color: #00d4ff; text-shadow: 0 0 10px rgba(0,212,255,0.5); }
+p { line-height: 1.8; margin-bottom: 15px; }
+
+/* 圖片與影片樣式 */
+.avatar {
+    width: 200px;
+    border-radius: 50%; /* 圓形大頭照 */
+    border: 3px solid #00d4ff;
+    transition: 0.3s;
+}
+.avatar:hover { transform: scale(1.1); }
+
+video {
+    width: 100%;
+    max-width: 600px;
+    border-radius: 15px;
+    margin: 20px 0;
+}
+
+/* 按鈕樣式 */
+.btn {
+    display: inline-block;
+    padding: 10px 25px;
+    background: #00d4ff;
+    color: #000;
+    text-decoration: none;
+    border-radius: 50px;
+    font-weight: bold;
+    margin: 10px;
+    transition: 0.3s;
+}
+.btn:hover { background: #fff; transform: translateY(-3px); }
+
+/* 表格樣式 */
+table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+}
+th, td {
+    padding: 10px;
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+}
